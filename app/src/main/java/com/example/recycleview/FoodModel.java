@@ -28,8 +28,8 @@ public class FoodModel {
         this.closeTime = closeTime;
     }
 
-    public int getImage() {
-        return image;
+    public static int getImage() {
+        return getImage();
     }
 
     public void setImage(int image) {
@@ -92,18 +92,17 @@ public class FoodModel {
         this.closeTime = closeTime;
     }
 
-    public static List<FoodModel> getMock() {
-        return new ArrayList<>(Arrays.asList(
-                new FoodModel(R.drawable.img_cheesecake, "Uncle Lu's Cheesecake - Sư Vạn Hạnh", "652 Sư Vạn Hạnh, P. 12, Quận 10, TP. HCM", Arrays.asList(Category.FAMILY, Category.GROUP), "Cả ngày - 15%", 10.1f, Utils.createDateForHour(8), Utils.createDateForHour(21));
-            new FoodModel(R.drawable.img_raulangxaothitbo, "Rau lang xào thịt bò - Nguyễn Thị Minh Khai", "18A/3 Nguyễn Thị Minh Khai, P. Đa Kao, Quận 1, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 12%", 21.5f, Utils.createDateForHour(17), Utils.createDateForHour(21));
-            new FoodModel(R.drawable.img_canhchuacaloc, "Canh chua cá lóc - Nguyễn Thị Minh Khai", "285/11 Cách Mạng Tháng 8, P. 12, Quận 10, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 20%", 6.5f, Utils.createDateForHour(17), Utils.createDateForHour(21));
-            new FoodModel(R.drawable.img_thitbachichienxaot, "Thịt ba chỉ chiên xả ớt - Trần Quốc Thảo", "120/4A Trần Quốc Thảo, P. 7, Quận 3, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 25%", 30.1f, Utils.createDateForHour(0), Utils.createDateForHour(24));
-            new FoodModel(R.drawable.img_mamchung, "Mắm chưng - Đặng Văn Ngữ", "69 Đặng Văn Ngữ, P. 14,  Quận Phú Nhuận, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY, Category.GROUP), "Cả ngày - 5%", 30.1f, Utils.createDateForHour(9), Utils.createDateForHour(23));
-            new FoodModel(R.drawable.img_laucakeo, "Lẩu cá kèo - Bà Huyện Thanh Quan", "87 Bà Huyện Thanh Quan, P. 7,  Quận 3, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY, Category.GROUP), "Cả ngày - 10%", 34.2f, Utils.createDateForHour(10), Utils.createDateForHour(22));
-            new FoodModel(R.drawable.img_comtam, "Cơm tấm - Hồng Bàng", "933 Hồng Bàng,  Quận 6, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY), "Cả ngày - 10%", 30.1f, Utils.createDateForHour(15), Utils.createDateForHour(22));
-            new FoodModel(R.drawable.img_bunbo, "Bún bò - Lý Chính Thắng", "134/11 Lý Chính Thắng, P. Võ Thị Sáu,  Quận 3, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY, Category.GROUP), "Cả ngày - 3%", 15.6f, Utils.createDateForHour(6), Utils.createDateForHour(22));
-            new FoodModel(R.drawable.img_pho, "Phở - Cửu Long", "58 Cửu Long, P. 15,  Quận 10, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 7%", 23.05f, Utils.createDateForHour(6), Utils.createDateForHour(23));
-            new FoodModel(R.drawable.img_bunmam, "Bún mắm - Nhật Tảo", "Hẻm 412 Nhật Tảo, P. 6,  Quận 10, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY), "Cả ngày", 49.3f, Utils.createDateForHour(7), Utils.createDateForHour(15));
-            ));
-    }
+//    public static List<FoodModel> getMock() {
+//        return new ArrayList<>(Arrays.asList(
+//                new FoodModel(R.drawable.img_cheesecake, "Uncle Lu's Cheesecake - Sư Vạn Hạnh", "652 Sư Vạn Hạnh, P. 12, Quận 10, TP. HCM", Arrays.asList(Category.FAMILY, Category.GROUP), "Cả ngày - 15%", 10.1f, Utils.createDateForHour(8), Utils.createDateForHour(21))));
+//            new FoodModel(R.drawable.img_raulangxaothitbo, "Rau lang xào thịt bò - Nguyễn Thị Minh Khai", "18A/3 Nguyễn Thị Minh Khai, P. Đa Kao, Quận 1, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 12%", 21.5f, Utils.createDateForHour(17), Utils.createDateForHour(21));
+//            new FoodModel(R.drawable.img_canhchuacaloc, "Canh chua cá lóc - Nguyễn Thị Minh Khai", "285/11 Cách Mạng Tháng 8, P. 12, Quận 10, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 20%", 6.5f, Utils.createDateForHour(17), Utils.createDateForHour(21));
+//            new FoodModel(R.drawable.img_thitbachichienxaot, "Thịt ba chỉ chiên xả ớt - Trần Quốc Thảo", "120/4A Trần Quốc Thảo, P. 7, Quận 3, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 25%", 30.1f, Utils.createDateForHour(0), Utils.createDateForHour(24));
+//            new FoodModel(R.drawable.img_mamchung, "Mắm chưng - Đặng Văn Ngữ", "69 Đặng Văn Ngữ, P. 14,  Quận Phú Nhuận, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY, Category.GROUP), "Cả ngày - 5%", 30.1f, Utils.createDateForHour(9), Utils.createDateForHour(23));
+//            new FoodModel(R.drawable.img_laucakeo, "Lẩu cá kèo - Bà Huyện Thanh Quan", "87 Bà Huyện Thanh Quan, P. 7,  Quận 3, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY, Category.GROUP), "Cả ngày - 10%", 34.2f, Utils.createDateForHour(10), Utils.createDateForHour(22));
+//            new FoodModel(R.drawable.img_comtam, "Cơm tấm - Hồng Bàng", "933 Hồng Bàng,  Quận 6, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY), "Cả ngày - 10%", 30.1f, Utils.createDateForHour(15), Utils.createDateForHour(22));
+//            new FoodModel(R.drawable.img_bunbo, "Bún bò - Lý Chính Thắng", "134/11 Lý Chính Thắng, P. Võ Thị Sáu,  Quận 3, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY, Category.GROUP), "Cả ngày - 3%", 15.6f, Utils.createDateForHour(6), Utils.createDateForHour(22));
+//            new FoodModel(R.drawable.img_pho, "Phở - Cửu Long", "58 Cửu Long, P. 15,  Quận 10, TP. HCM", Arrays.asList(Category.RESTAURANT), "Cả ngày - 7%", 23.05f, Utils.createDateForHour(6), Utils.createDateForHour(23));
+//            new FoodModel(R.drawable.img_bunmam, "Bún mắm - Nhật Tảo", "Hẻm 412 Nhật Tảo, P. 6,  Quận 10, TP. HCM", Arrays.asList(Category.RESTAURANT, Category.FAMILY), "Cả ngày", 49.3f, Utils.createDateForHour(7), Utils.createDateForHour(15));
+
 }
